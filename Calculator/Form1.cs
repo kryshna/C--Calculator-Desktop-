@@ -15,6 +15,7 @@ namespace Calculator
     {
         private string sOperator = "";
         private string sFirstValue = "";
+  
         public Form1()
         {
             InitializeComponent();
@@ -60,16 +61,16 @@ namespace Calculator
                     break;
                 case "sin":
                     double val = double.Parse(sFirstValue);
-                     Result =(double) Math.Sin(val);
-                  //  Result = Math.Sin(float.Parse(sFirstValue));
+                     Result = Math.Sin(val * Math.PI/180);
+                  
                      break;
                 case "cos":
                     double ans = double.Parse(sFirstValue);
-                    Result = Math.Cos(ans);
+                    Result = Math.Cos(ans * Math.PI/180);
                     break;
                 case "tan":
                      ans = double.Parse(sFirstValue);
-                    Result = Math.Tan(ans);
+                    Result = Math.Tan(ans * Math.PI/180);
                     break;
 
                 case "fact":
